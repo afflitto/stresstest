@@ -17,8 +17,8 @@ while true; do
 	#run test
 	sysbench --num-threads=4 --validate=on --test=cpu --cpu-max-prime=$maxprime run
 	
-	#time in seconds to sleep before next round of testing (15s-2m)
-	sleeptime=$(shuf -i 15-120 -n 1)
+	#time in seconds to sleep before next round of testing (15s-5m)
+	sleeptime=$(shuf -i 15-300 -n 1)
 	
 	#print temperature after test
 	echo -n "Temperature (post test):"
