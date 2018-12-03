@@ -11,7 +11,7 @@ while true; do
 	date
 	
 	#print temperature before test
-	echo -n "Temperature (pre test):"
+	echo -n "Temperature (pre test $i):"
 	vcgencmd measure_temp
 
 	#run test
@@ -21,7 +21,7 @@ while true; do
 	sleeptime=$(shuf -i 15-300 -n 1)
 	
 	#print temperature after test
-	echo -n "Temperature (post test):"
+	echo -n "Temperature (post test $i):"
 	vcgencmd measure_temp
 	
 	#sleep
