@@ -11,7 +11,7 @@ while true; do
 	date
 	
 	#print temperature before test
-	echo -n "Temperature (pre test $i):"
+	echo -n "Temperature (pre  test $i):"
 	vcgencmd measure_temp
 
 	#run test
